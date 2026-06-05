@@ -5,7 +5,7 @@ class SoundManager {
     constructor() {
         this.ctx = new (window.AudioContext || window.webkitAudioContext)();
         this.masterGain = this.ctx.createGain();
-        this.masterGain.gain.value = 0.1;
+        this.masterGain.gain.value = 0.9;
         this.masterGain.connect(this.ctx.destination);
     }
 
