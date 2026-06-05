@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    font-family: sans-serif;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    text-shadow: 1px 1px 2px black;
+    z-index: 10;
+}
+
+#ui .score {
+    font-size: 32px;
+    color: #00ff00;
+}
+
+#ui .controls {
+    font-size: 14px;
+    color: #ccc;
+}
+
+#restart-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 20;
+}
+
+#restart-btn {
+    background: #00ff00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 0 20px #00ff00;
+    transition: transform 0.1s;
+}
+
+#restart-btn:active {
+    transform: scale(0.95);
+}
+
+#restart-container h1 {
+    color: red;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+#minimap {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #555;
+    border-radius: 50%;
+    pointer-events: none;
+}
